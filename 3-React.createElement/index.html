@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script>
+    const Title = React.createElement('h2', {
+      className : 'title'
+    }, 'React course coderX');
+    const Image = React.createElement('img', {
+      src : 'https://picsum.photos/200/300'
+    })
+    const App = React.createElement('div', null, Title, Image);
+    const root = document.getElementById('root');
+    ReactDOM.render(App, root);
+  </script>
+</body>
+</html>
